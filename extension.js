@@ -54,16 +54,12 @@ game.import("extension", function () {
 				nopointer: true,
 				clear: true,
 				name:
-					"扩展版本: 1.2.4<br>更新日期: 2026-7-3<br>更新内容：" +
+					"扩展版本: 1.2.5<br>更新日期: 2026-7-3<br>更新内容：" +
 					"<br>1.<b>" +
-					"新增10名武将：<font color=#99FFFF>天罡星</font>：关胜、张顺；<font color=#FF7F00>地煞星</font>：李云、李忠；<font color=#FFD700>其他</font>：杨戬、潘巧云、庞万春、田虎、仇琼英、赵佶。" +
+					"新增6名武将：<font color=#99FFFF>天罡星</font>：武松；<font color=#FF7F00>地煞星</font>：陈达、杨春、安道全；<font color=#FFD700>其他</font>：史文恭、高衙内。" +
 					"</b>" +
 					"<br>2.<b>" +
-					"暂时删除武将鲁智深，加强部分武将技能。" +
-					"</b>" +
-					/*"<br>3.<b>" +
-					"多数武将新增静态皮肤，可按需下载单独的皮肤包。" +*/
-					"</b>" +
+					"史进加强。" +
 					"<br>3.<b>" +
 					"优化部分武将ai。" +
 					"</b>" +
@@ -107,7 +103,7 @@ game.import("extension", function () {
 			author: "Mushi",
 			diskURL: "https://github.com/Mushi1212/ShuiPoNiangShan/releases",
 			forumURL: "",
-			version: "1.2.4",
+			version: "1.2.5",
 		},
 		files: { character: [], card: [], skill: [], audio: [] },
 	};

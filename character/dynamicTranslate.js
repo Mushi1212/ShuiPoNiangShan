@@ -103,8 +103,13 @@ const dynamicTranslates = {
 	},
 	shyidan: function (player) {
 		var names = player.storage.shyidan;
-		if (!player.storage.shyidan) "每轮每项限一次，你可以：①明置一张【杀】；②弃置一张【闪】；③分配一张【酒】，并视为使用【桃】。每轮结束时，若你本轮造成过伤害，你可以重新分配上述基本牌的位置。";
+		if (!player.storage.shyidan) return "每轮每项限一次，你可以：①明置一张【杀】；②弃置一张【闪】；③分配一张【酒】，并视为使用【桃】。每轮结束时，若你本轮造成过伤害，你可以重新分配上述基本牌的位置。";
 		return `每轮每项限一次，你可以：①明置一张【${get.translation(names[0])}】；②弃置一张【${get.translation(names[1])}】；③分配一张【${get.translation(names[2])}】，并视为使用【${get.translation(names[3])}】。每轮结束时，若你本轮造成过伤害，你可以重新分配上述基本牌的位置。`;
+	},
+	shchenggong: function (player) {
+		var storage = player.storage.shchenggong_lose || 0;
+		if(storage < 2) return "出牌阶段限两次，你可以失去1点体力并视为使用一张【决斗】，赢者摸X张牌（X为本回合进入弃牌堆的【杀】的花色数）。你发动〖逞攻〗未赢2次后，决斗改为拼点；未赢5次后，你失去〖逞攻〗。"
+	    return "出牌阶段限两次，你可以失去1点体力并拼点，赢者摸X张牌（X为本回合进入弃牌堆的【杀】的花色数）。你发动〖逞攻〗未赢5次后，你失去〖逞攻〗。"
 	},
 };
 

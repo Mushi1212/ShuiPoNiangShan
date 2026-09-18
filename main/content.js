@@ -58,6 +58,7 @@ export function content(config, pack) {
 	lib.translate.shweizhan_tag1 = "威斩-1次";
 	lib.translate.shweizhan_tag2 = "威斩-2次";
 	lib.translate.visible_shyanzi = "艳姿";
+	lib.translate.visible_shzhengzhen = "征珍";
 	lib.poptip.add({
 		id: "rule_xushiSkill",
 		name: "蓄势技",
@@ -92,11 +93,11 @@ export function content(config, pack) {
 	//普通
 	lib.rank.rarity.junk.add(...["sh_kongming", "sh_kongliang"]);
 	//精品
-	lib.rank.rarity.rare.add(...["sh_songqing", "sh_zhugui", "sh_dengfei", "sh_zhoutong", "sh_oupeng", "sh_sunerniang", "sh_husanniang", "sh_yuehe", "sh_yubaosi", "sh_tanglong", "sh_duanjingzhu", "sh_shiqian", "sh_wangdingliu", "sh_zhufu", "sh_shantinggui", "sh_weidingguo", "sh_lingzhen", "sh_yanglin", "sh_caifu", "sh_taozongwang", "sh_caiqing", "sh_lili", "sh_wangying", "sh_zhengtianshou", "sh_yanshun", "sh_houjian", "sh_zouyuan", "sh_zourun", "sh_jiaoting", "sh_tongwei", "sh_tongmeng", "sh_shiyong", "sh_baisheng", "sh_sunxin", "sh_mengkang", "sh_liyun", "sh_yanpoxi", "sh_lvfang", "sh_guosheng", "sh_ximenqing", "sh_hongxin", "sh_gongwang", "sh_dingdesun", "sh_xueyong", "sh_huangfuduan", "sh_duansanniang", "sh_andaoquan", "sh_duxing", "sh_lishishi", "sh_lizhong"]);
+	lib.rank.rarity.rare.add(...["sh_songqing", "sh_zhugui", "sh_dengfei", "sh_zhoutong", "sh_oupeng", "sh_sunerniang", "sh_husanniang", "sh_yuehe", "sh_yubaosi", "sh_tanglong", "sh_duanjingzhu", "sh_shiqian", "sh_wangdingliu", "sh_zhufu", "sh_shantinggui", "sh_weidingguo", "sh_lingzhen", "sh_yanglin", "sh_caifu", "sh_taozongwang", "sh_caiqing", "sh_lili", "sh_wangying", "sh_zhengtianshou", "sh_yanshun", "sh_houjian", "sh_zouyuan", "sh_zourun", "sh_jiaoting", "sh_tongwei", "sh_tongmeng", "sh_shiyong", "sh_baisheng", "sh_sunxin", "sh_mengkang", "sh_liyun", "sh_yanpoxi", "sh_lvfang", "sh_guosheng", "sh_ximenqing", "sh_hongxin", "sh_gongwang", "sh_dingdesun", "sh_xueyong", "sh_huangfuduan", "sh_duansanniang", "sh_duxing", "sh_lishishi", "sh_lizhong", "sh_gaoyanei", "sh_duwei", "sh_liangshijie", "sh_chenda", "sh_yangchun"]);
 	//史诗
-	lib.rank.rarity.epic.add(...["sh_muchun", "sh_malin", "sh_baoxu", "sh_shixiu", "sh_xiaorang", "sh_peixuan", "sh_jiangjing", "sh_huangxin", "sh_sunli", "sh_haosiwen", "sh_pengqi", "sh_hantao", "sh_liutang", "sh_wuyong", "sh_caozheng", "sh_daizong", "sh_muhong", "sh_zhangheng", "sh_likui", "sh_zhangqing", "sh_zhuwu", "sh_suochao", "sh_ruanxiaoer", "sh_ruanxiaowu", "sh_shien", "sh_zhangqing2", "sh_xuning", "sh_yangzhi", "sh_zhutong", "sh_gudasao", "sh_yangxiong", "sh_wanglun", "sh_leiheng", "sh_jindajian", "sh_lijun", "sh_xuanzan", "sh_zhuzhuzhu", "sh_xiezhen", "sh_xiebao", "sh_chaijin", "sh_zhangshun", "sh_fanrui", "sh_caijing", "sh_ruanxiaoqi", "sh_lizhu", "sh_liying", "sh_yanqing", "sh_tongguan", "sh_shijin", "sh_koumie", "sh_baodaoyi", "sh_huarong", "sh_gaoqiu", "sh_yangxiong", "sh_dalibo", "sh_yangjian", "sh_panqiaoyun", "sh_qiuqiongying", "sh_zhaoji"]);
+	lib.rank.rarity.epic.add(...["sh_muchun", "sh_malin", "sh_baoxu", "sh_shixiu", "sh_xiaorang", "sh_peixuan", "sh_jiangjing", "sh_huangxin", "sh_sunli", "sh_haosiwen", "sh_pengqi", "sh_hantao", "sh_liutang", "sh_wuyong", "sh_caozheng", "sh_daizong", "sh_muhong", "sh_zhangheng", "sh_likui", "sh_zhangqing", "sh_zhuwu", "sh_suochao", "sh_ruanxiaoer", "sh_ruanxiaowu", "sh_shien", "sh_zhangqing2", "sh_xuning", "sh_yangzhi", "sh_zhutong", "sh_gudasao", "sh_yangxiong", "sh_wanglun", "sh_leiheng", "sh_jindajian", "sh_lijun", "sh_xuanzan", "sh_zhuzhuzhu", "sh_xiezhen", "sh_xiebao", "sh_chaijin", "sh_zhangshun", "sh_fanrui", "sh_caijing", "sh_ruanxiaoqi", "sh_lizhu", "sh_liying", "sh_yanqing", "sh_tongguan", "sh_shijin", "sh_koumie", "sh_baodaoyi", "sh_huarong", "sh_gaoqiu", "sh_yangxiong", "sh_dalibo", "sh_yangjian", "sh_panqiaoyun", "sh_qiuqiongying", "sh_zhaoji", "sh_hezhongbao", "sh_andaoquan"]);
 	//传说
-	lib.rank.rarity.legend.add(...["sh_songjiang", "sh_huyanzhuo", "sh_dongping", "sh_chaogai", "sh_wuyanguang", "sh_qinming", "sh_bianxiang", "sh_luzhishen", "sh_shibao", "sh_qiaodaoqing", "sh_yelvhui", "sh_gongsunsheng", "sh_jiutianxuannv", "sh_zengzengzengzengzeng", "sh_guansheng", "sh_pangwanchun", "sh_tianhu"]);
+	lib.rank.rarity.legend.add(...["sh_songjiang", "sh_huyanzhuo", "sh_dongping", "sh_chaogai", "sh_wuyanguang", "sh_qinming", "sh_bianxiang", "sh_luzhishen", "sh_shibao", "sh_qiaodaoqing", "sh_yelvhui", "sh_gongsunsheng", "sh_jiutianxuannv", "sh_zengzengzengzengzeng", "sh_guansheng", "sh_pangwanchun", "sh_tianhu", "sh_wusong", "sh_shiwengong"]);
 
 	if (lib.config.extension_水泊娘山_centralDis) {
 		ui.click.cardPileButton = function () {
