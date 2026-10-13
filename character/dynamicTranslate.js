@@ -108,8 +108,16 @@ const dynamicTranslates = {
 	},
 	shchenggong: function (player) {
 		var storage = player.storage.shchenggong_lose || 0;
-		if(storage < 2) return "出牌阶段限两次，你可以失去1点体力并视为使用一张【决斗】，赢者摸X张牌（X为本回合进入弃牌堆的【杀】的花色数）。你发动〖逞攻〗未赢2次后，决斗改为拼点；未赢5次后，你失去〖逞攻〗。"
-	    return "出牌阶段限两次，你可以失去1点体力并拼点，赢者摸X张牌（X为本回合进入弃牌堆的【杀】的花色数）。你发动〖逞攻〗未赢5次后，你失去〖逞攻〗。"
+		if(storage < 1) return "出牌阶段限两次，你可以失去X点体力并视为使用一张【决斗】，赢者摸X张牌（X为本回合进入弃牌堆的【杀】的花色数）。你发动〖逞攻〗未赢1次后，决斗改为拼点；未赢3次后，你失去〖逞攻〗。"
+	    return "出牌阶段限两次，你可以失去X点体力并拼点，赢者摸X张牌（X为本回合进入弃牌堆的【杀】的花色数）。你发动〖逞攻〗未赢3次后，你失去〖逞攻〗。"
+	},
+	shqitao: function (player) {
+		if (player.storage.shqitao) return '你可将你武将牌上一张“兵”当任意<span class="firetext">基本牌</span>使用，然后若此牌为普通锦囊牌，你交换描述中的“普通锦囊牌”和“基本牌”；否则〖奇韬〗本轮失效。';
+		return '你可将你武将牌上一张“兵”当任意<span class="firetext">普通锦囊牌</span>使用，然后若此牌为基本牌，你交换描述中的“基本牌”和“普通锦囊牌”；否则〖奇韬〗本轮失效。';
+	},
+	shleichu: function (player) {
+		if (player.storage.shleichu) return "锁定技。准备阶段或你受到伤害时，你须交给一名其他角色至多两张牌，然后其本回合结束时交给你至少两张牌。";
+		return `${get.poptip("sxrm_qidingSkill")}。准备阶段或你受到伤害时，你可交给一名其他角色至多两张牌，然后其本回合结束时交给你至少两张牌。`;
 	},
 };
 

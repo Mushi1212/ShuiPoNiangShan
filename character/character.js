@@ -813,13 +813,35 @@ const character = {
 		doubleGroup: ["shnan", "qun"],
 	},
 
-	/*sh_duwei: {
+	sh_sixingfang: {
+		sex: "female",
+		group: "shnan",
+		hp: 4,
+		skills: ["shsibing"],
+		doubleGroup: ["shnan", "qun"],
+	},
+	/*sh_litianrun: {
+		sex: "female",
+		group: "shnan",
+		hp: 4,
+		skills: ["shfengzhuan"],
+		doubleGroup: ["shnan", "qun"],
+	},*/
+	sh_duwei: {
 		sex: "female",
 		group: "shnan",
 		hp: 3,
-		skills: ["shcerao", "shxucang"],
+		skills: ["shcerao"],
 		doubleGroup: ["shnan", "qun"],
-	},*/
+	},
+
+	sh_wangyin: {
+		sex: "female",
+		group: "shnan",
+		hp: 4,
+		skills: ["shzhangbing", "shkuicheng", "shqitao"],
+		doubleGroup: ["shnan", "qun"],
+	},
 
 	sh_gaoqiu: {
 		sex: "female",
@@ -879,6 +901,13 @@ const character = {
 		skills: ["shtujiang", "shlangsi", "shhaoye"],
 		doubleGroup: ["shliao", "qun"],
 		isZhugong: true,
+	},
+	sh_yelvzongyundianleilin: {
+		sex: "female",
+		group: "shliao",
+		hp: 4,
+		skills: ["shlizhan", "shhewei"],
+		doubleGroup: ["shliao", "qun"],
 	},
 
 	sh_jiutianxuannv: {
@@ -944,13 +973,24 @@ const character = {
 		hp: 3,
 		skills: ["shbazhen", "shtongmai"],
 	},
-	sh_shiwengong: {
+	/*sh_shiwengong: {
 		sex: "female",
 		group: "qun",
 		hp: 4,
 		skills: ["shsheyu", "shzhoushi"],
+	},*/
+	sh_huabaoyan: {
+		sex: "female",
+		group: "liang",
+		hp: 3,
+		skills: ["shyingfeng", "shyanyu"],
 	},
-
+	sh_peiruhai: {
+		sex: "female",
+		group: "qun",
+		hp: 4,
+		skills: ["shpaichan", "shdaohai"],
+	},
 	// ========== 已注释的武将（取消注释即可启用） ==========
 	/*
 	sh_chenda: {
@@ -1051,6 +1091,13 @@ const character = {
 		hp: 4,
 		skills: ["shpojun","shcuiren"],
 	},*/
+
+	sh_jincuilian: {
+		sex: "female",
+		group: "qun",
+		hp: 3,
+		skills: ["shlouting", "shleichu"],
+	},
 };
 if (lib.device || lib.node) {
 	for (var i in character) {

@@ -54,9 +54,9 @@ game.import("extension", function () {
 				nopointer: true,
 				clear: true,
 				name:
-					"扩展版本: 1.2.5<br>更新日期: 2026-7-3<br>更新内容：" +
+					"扩展版本: 1.2.5<br>更新日期: 2026-10-13<br>更新内容：" +
 					"<br>1.<b>" +
-					"新增6名武将：<font color=#99FFFF>天罡星</font>：武松；<font color=#FF7F00>地煞星</font>：陈达、杨春、安道全；<font color=#FFD700>其他</font>：史文恭、高衙内。" +
+					"新增12名武将：<font color=#99FFFF>天罡星</font>：武松；<font color=#FF7F00>地煞星</font>：陈达、杨春、安道全；<font color=#FFD700>其他</font>：王寅、司行方、杜微、耶律四子、高衙内、裴如海、花宝燕、金翠莲。" +
 					"</b>" +
 					"<br>2.<b>" +
 					"史进加强。" +
@@ -99,7 +99,7 @@ game.import("extension", function () {
 			//character: { character: {}, translate: {} },
 			//card: { card: {}, translate: {}, list: [] },
 			//skill: { skill: {}, translate: {} },
-			intro: "推荐使用本体1.11.4及以上版本，欢迎加下群反馈或下载更新版本。" + "<br>" + "拓展群：" + "<br>" + "<img style=width:238px src=" + lib.assetURL + "extension/水泊娘山/main/image/mess/sh_gChat.png>",
+			intro: "推荐使用本体1.11.6及以上版本，欢迎加下群反馈或下载更新版本。" + "<br>" + "拓展群：" + "<br>" + "<img style=width:238px src=" + lib.assetURL + "extension/水泊娘山/main/image/mess/sh_gChat.png>",
 			author: "Mushi",
 			diskURL: "https://github.com/Mushi1212/ShuiPoNiangShan/releases",
 			forumURL: "",
